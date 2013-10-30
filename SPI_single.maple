@@ -1,0 +1,16 @@
+// Use SPI port number 1
+HardwareSPI spi(1);
+
+void setup() {
+    // Turn on the SPI port
+    spi.begin(SPI_18MHZ, MSBFIRST, 0);
+}
+
+void loop() {
+   // Send 245 over SPI, and wait for a response.
+   spi.write(245);
+   byte response = spi.read();
+   // Print out the response received.
+   SerialUSB.print("response: ");
+   SerialUSB.println(response, DEC);
+}
