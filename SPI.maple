@@ -1,5 +1,5 @@
 // Code developed by Pol Pla i Conesa, abd modified by Tom Xue
-// Connect SPI1's MISO and MOSI together
+// Connect SPI1's MISO and MOSI together, and use Serial Monitor we can see the char "d" printed out continuously
 
 // declaration of the HardwareSPI object the parenthesis
 // indicates which SPI port we want to use (SPI1 or SPI2)
